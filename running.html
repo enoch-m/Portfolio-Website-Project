@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="sl-theme-dark">
+<head>
+  <meta charset="UTF-8" />
+  <title>Running Details</title>
+  <link rel="stylesheet" href="fitness2.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+  <link rel="stylesheet" href="index.css" />
+  <script src="index.js"></script>
+</head>
+    <body>
+        <div id="navbar-placeholder"></div>
+        <main>
+            <section class="hero">
+            <h1>Running</h1>
+            </section>
+            <section class="details">
+            <sl-responsive-media aspect-ratio="16:9">
+                <iframe
+                src="https://www.youtube.com/embed/brFHyOtTwH4"
+                title="Running Tutorial"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+                </iframe>
+            </sl-responsive-media>
+
+            <p><strong>Duration:</strong> 40 minutes</p>
+            <p><strong>Calories Burned:</strong> 300 kcal</p>
+            <p><strong>Description:</strong> Running is a high-efficiency aerobic exercise that boosts cardiovascular health and burns calories quickly.</p>
+
+            <sl-button href="fitness.html" variant="primary">← Back to Workout List</sl-button>
+            </section>
+        </main>
+    </body>
+</html>

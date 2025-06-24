@@ -1,0 +1,102 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+main {
+    padding: 2rem;
+  }
+  
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+.recipe-grid {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+.card-overview {
+    height: 100%;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+.tag {
+    padding: 0.25em 0.6em;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+  }
+  
+.tag-gf { background-color: #ec8aa4; } /* Gluten-Free */
+.tag-hf { background-color: #f7d372; } /* High-Fiber */
+.tag-v  { background-color: #5ba88c; } /* Vegetarian */
+.tag-hp { background-color: #4b99f6; } /* High-Protein */
+.tag-lc { background-color: #888; }    /* Low-Carb */
+.tag-df { background-color: #9b59b6; } /* Dairy-Free */
+.tag-kf { background-color: #f39c12; } /* Kid-Friendly */
+.tag-w  { background-color: #2ecc71; } /* Whole30 */
+
+.step-gallery{
+  display: flex;
+  gap: 24px;
+  justify-content: center; 
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+.step-gallery figure{
+  flex:0 0 220px; 
+  margin:0; 
+  position:relative; 
+  text-align:center;
+}
+.step-gallery img{
+  width:100%; 
+  height:auto; 
+  border-radius:6px;
+}
+.step-gallery figcaption{
+  position:absolute; 
+  bottom:0; 
+  left:0; 
+  right:0;
+  background:rgba(0,0,0,.55); 
+  color:#fff; 
+  font-size:.9rem;
+  padding:.4em 0;
+}
+
+figure {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.summary{
+  text-align: center;
+}
+  
+  

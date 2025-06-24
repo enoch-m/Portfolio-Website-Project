@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" class="sl-theme-dark">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CS472 Group Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css" />
+    <link rel="stylesheet" href="fitness.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+    <script src="fitness.js" type="module"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+    <main>
+      <h1>Workout List</h1>
+      <!-- <sl-alert id="input-warning-alert" variant="warning" duration="3000" closable>
+        <sl-icon slot="icon" name="exclamation-triangle"></sl-icon>
+        <strong>Your input is invalid!</strong><br>
+        Please enter numbers.
+      </sl-alert> -->
+      <div class="input-grid">
+        <sl-input id="height" type="number" label="Height" help-text="cm" placeholder="175"></sl-input>
+        <sl-input id="weight" type="number" label="Weight" help-text="kg" placeholder="45"></sl-input>
+      </div>
+      <div id="bmi-output" style="margin-bottom: 1rem; font-size: 1.1rem;"></div>
+      
+      <sl-divider style="--color: tomato;"></sl-divider>
+      <sl-alert id="card-warning-alert" variant="warning" duration="3000" closable>
+        <sl-icon slot="icon" name="exclamation-triangle"></sl-icon>
+        <strong>You have already added this Workout!</strong><br>
+        Consider other workouts.
+      </sl-alert>
+      <div id="card-container" class="container"></div>
+      <sl-button id="open-drawer-btn" variant="primary">My list</sl-button>
+      <sl-button id="open-stat-btn" href="daily.html" variant="primary">My Workout Info</sl-button>
+    </main>
+
+    <sl-drawer label="My list" class="drawer-overview" placement="end"></sl-drawer>
+  </body>
+</html>

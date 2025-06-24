@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="sl-theme-dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS472 Group Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css"
+    />
+    <link rel="stylesheet" href="gear.css" />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"
+    ></script>
+    <script src="gear.js" type="module"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div id="navbar-placeholder"></div>
+
+    <main>
+      <h1>Workout Gear</h1>
+
+      <div id="card-container" class="container"></div>
+      <sl-button id="open-drawer-btn" variant="primary">My Cart</sl-button>
+    </main>
+
+    <sl-drawer
+      label="My Cart"
+      class="drawer-overview"
+      placement="end"
+    ></sl-drawer>
+  </body>
+</html>

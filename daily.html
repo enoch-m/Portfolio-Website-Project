@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="sl-theme-dark">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Daily Workout Tracker</title>
+        <link rel="stylesheet" href="fitness2.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css"/>
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+        <link rel="stylesheet" href="index.css" />
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div id="navbar-placeholder"></div>
+        <main style="max-width: 800px; margin: 2rem auto; padding: 1rem;">
+            <h1>Daily Workout Tracker</h1>
+
+            <div class="stats-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+            <sl-card>
+                <strong>Total Sessions</strong>
+                <sl-badge variant="primary" pill id="badge-count">0</sl-badge>
+            </sl-card>
+            <sl-card>
+                <strong>Total Time</strong>
+                <sl-badge variant="success" pill id="badge-time">0 min</sl-badge>
+            </sl-card>
+            <sl-card>
+                <strong>Total Calories</strong>
+                <sl-badge variant="warning" pill id="badge-cal">0 kcal</sl-badge>
+            </sl-card>
+            <sl-card>
+                <strong>Avg Calories/Session</strong>
+                <sl-badge variant="info" pill id="badge-avg">0 kcal</sl-badge>
+            </sl-card>
+            </div>
+
+            <sl-table>
+                <sl-thead>
+                    <sl-tr>
+                        <sl-th>Done</sl-th>
+                        <sl-th>Workout</sl-th>
+                        <sl-th>Duration</sl-th>
+                        <sl-th>Calories</sl-th>
+                    </sl-tr>
+                </sl-thead>
+                <sl-tbody id="workout-list"></sl-tbody>
+            </sl-table>
+
+            <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: flex-end;">
+            <sl-button variant="danger" id="clear-btn">Clear</sl-button>
+            <sl-button variant="primary" href="fitness.html">Back to Workouts</sl-button>
+            </div>
+        </main>
+        <script src="workout.js"></script>
+    </body>
+</html>

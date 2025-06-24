@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" class="sl-theme-dark">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CS472 Group Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css" />
+    <link rel="stylesheet" href="recipe.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+    <script src="recipe.js" type="module"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+    <main>
+      <h1>Fuel Your Fitness with Clean Eating</h1>
+      <h2>Latest Healthy Recipes</h2>
+      <!--Recipe grid-->
+      <div id="card-container" class="recipe-grid"></div>
+      <!--Food calories counting-->
+      <section style="margin: 2rem auto; text-align: center;">
+        <h2>Check Nutrition Info</h2>
+        <input id="nutrition-input" type="text" placeholder="e.g., 1 banana and 1 cup milk"
+               style="width: 280px; padding: 0.6rem; border-radius: 8px;" />
+        <sl-button id="nutrition-check-btn" variant="success" style="margin-left: 12px;">Check</sl-button>
+        <div id="nutrition-result" style="margin-top: 1rem; text-align: left; max-width: 480px; margin-inline: auto;"></div>
+      </section>      
+      <!--Saved Recipe-->
+      <sl-button id="open-drawer-btn" variant="primary">Saved Recipe</sl-button>
+    </main>
+    <sl-drawer class="drawer-overview" placement="end"></sl-drawer>
+  </body>
+</html>

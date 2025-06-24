@@ -1,0 +1,26 @@
+[
+    {
+      "name": "Running",
+      "time": 40,
+      "img": "fitnessImg/pexels-mastercowley-1199590.jpg",
+      "cal": 300
+    },
+    {
+      "name": "Crunch",
+      "time": 30,
+      "img": "fitnessImg/pexels-pixabay-416778.jpg",
+      "cal": 150
+    },
+    {
+      "name": "Dumbbell",
+      "time": 30,
+      "img": "fitnessImg/pexels-anush-1229356.jpg",
+      "cal": 126
+    },
+    {
+      "name": "Push-up",
+      "time": 30,
+      "img": "fitnessImg/pexels-keiji-yoshiki-31563-176782.jpg",
+      "cal": 18
+    }
+  ]
